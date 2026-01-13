@@ -6,57 +6,57 @@ Analyze Cyclistic’s 2019 bike-share data to understand how annual members and 
 </br>
 Used under a public data license for educational purposes.
 
-## 📊 Project Overview
-This project is part of the Google Data Analytics Capstone Case Study.
+## Dasboard
+<a href="https://app.powerbi.com/groups/4b9c4c99-827a-4dba-b8da-c1541a4cd226/list?experience=power-bi">Healthcare Operations Dasboard</a>
 </br>
-It follows the six-step data analysis process: Ask, Prepare, Process, Analyze, Share, and Act.
+
+## 📊 Project Overview
+(Google Data Analytics Capstone Case Study) Analyze Cyclistic’s 2019 bike-share data to understand how annual members and casual riders use bikes differently — and provide recommendations to help convert casual riders into members.
 
 ## 🧩 Business Task
-Identify usage differences between annual members and casual riders to support Cyclistic’s marketing strategy.
+The marketing director aims to analyze Cyclistic historical trip data to identify how annual members and casual riders use the service differently. The analysis focuses on uncovering actionable insights to drive a new marketing strategy centered on member conversion.
+
 
 ## 🧰 Tools Used
-Excel & Power Query → Data cleaning, merging, and transformation
+Excel – Data cleaning and preprocessing.
 </br>
-PivotTables & Charts → Statistical summaries and visualization
+SQL – Big Data Management, Advanced Filtering and Performance Optimization.
 </br>
-PowerPoint → Final presentation of insights and recommendations
+Power BI – Data modeling, DAX measures, dashboards.
+</br>
+PowerPoint → Final presentation of insights and recommendations.
 
 ## 🧹 Data Cleaning
-Combined four quarterly datasets (Q1–Q4 2019, Divvy Trips)
+Identified and removed duplicate trip IDs and handled missing values in station names to prevent skewed counts.
 </br>
-Removed null and invalid records
+Converted ride start and end times into standard formats to extract Day of Week, Month, and Time of Day for behavioral analysis.
 </br>
-Converted start/end times to durations (minutes)
+Excluded "false starts" (trips under 60 seconds) and maintenance rides (unusually long durations) that do not represent actual customer behavior.
 </br>
-Added derived columns: ride length, day of week, user type
+Created new calculated columns, such as Ride Length (Minutes) and Rush Hour Flags, to identify the "Commuter" vs. "Leisure" segments.
 </br>
-Verified data consistency across files
+Cross-referenced totals (e.g., verifying the 3M Member trips) against baseline reports to ensure 100% data accuracy before visualization.
 
 ## 📈 Key Insights
-Members take 90% of all rides, primarily on weekdays for short, consistent commutes.
+The "Commuter Gap" [High Priority]: Casual riders currently only have a 46.74% rush hour usage rate compared to 63.44% for members. Closing this gap represents a prime opportunity to convert casuals who already use the service for work.
 </br>
-Casual riders take fewer but longer rides, mainly on weekends for leisure.
+Weekend Peak Engagement [Quick Win]: Casual ridership peaks dramatically on Saturday and Sunday afternoons, with a single high-volume spike of 184K trips at 1:00 PM. This is the optimal window for digital ad spend and influencer marketing.
 </br>
-Average ride length: Casual ≈ 23 min | Members ≈ 12 min.
+The " Duration Discrepancy" [Strategic Adjustment]: Casual riders average 35.29 to 37.28 minutes per ride, nearly 3x longer than the 12.55-minute member average. Marketing the membership as a way to avoid "overage fees" for long rides is a key incentive.
+![](https://github.com/Omer-mohamed01/Cyclistic-Bike-Share-Analysis-Report/blob/5289b2f4094235bb6b2cbaed7071cbc38c4f525f/Charts/Top%2010%20Routes%20Through%20Rush%20Hours%20By%20Casual.png)
 </br>
-Gender distribution is similar across both groups but overall male-dominated.
-</br>
-Clear opportunity to convert weekend casual riders into annual members.
-![](https://github.com/Omer-mohamed01/Cyclistic-Bike-Share-Analysis/blob/16dab1253fc05c436aba562428730ee514ceeb40/Charts/Sum%20of%20Trips%20Casual%20vs%20Annual.png)
-</br>
-![](https://github.com/Omer-mohamed01/Cyclistic-Bike-Share-Analysis/blob/16dab1253fc05c436aba562428730ee514ceeb40/Charts/Average%20Ride%20Length%20Day%20of%20Week.png)
+![](https://github.com/Omer-mohamed01/Cyclistic-Bike-Share-Analysis-Report/blob/5289b2f4094235bb6b2cbaed7071cbc38c4f525f/Charts/Total%20Number%20Of%20Trips%20By%20Day%20%26%20Time%20Of%20Day%20By%20Member.png)
 
 ## 💡 Recommendations
-Offer weekend or seasonal membership discounts to attract casual riders.
+"Commute for Less" Campaign [High Priority]: Launch targeted digital advertisements at the Top 10 commuter stations. These ads should specifically highlight the cost-savings of an annual membership for the 406,000 casual riders identified as regular weekday commuters.
 </br>
-Highlight membership benefits (cost savings, convenience) in targeted campaigns.
+Weekend "Lifestyle" Membership [Quick Win]: Introduce a "Weekend-Only" or "Lifestyle" tier promoted by social media influencers at weekend hotspots like Streeter Dr & Grand Ave. Target the peak engagement window of Saturday at 1:00 PM to maximize reach.
 </br>
-Promote commuting plans and loyalty rewards to retain active members.
-</br>
-Focus marketing on recreational users during weekends and holidays.
+Benefit Education: "Experience More" [Strategic Adjustment]: Leverage the fact that casual riders already average 35–37 minutes per ride. Market the member benefit of longer inclusive ride times (45 mins) to show them how to avoid current overage fees.
 
 ## 🧠 Outcome
 This analysis provides data-driven insights for Cyclistic’s marketing strategy, emphasizing how understanding rider behavior can help increase membership conversion and long-term engagement.
+</br>
 
 ---
 
@@ -68,20 +68,14 @@ Divvy Trips 2019
 README.md
 </br>
 LICENSE
-</br>
 ├── Link |
-    └──<a href="https://github.com/Omer-mohamed01/Cyclistic-Bike-Share-Analysis-Report/blob/02a83b36fed2673c520adccbdfe04aec2e5b6f76/Data%20Source/Data%20Source%20Link.txt">Data Source Link.txt</a>
+    └──<a href="https://github.com/Omer-mohamed01/Cyclistic-Bike-Share-Analysis-Report/blob/5289b2f4094235bb6b2cbaed7071cbc38c4f525f/Data%20Source/Data%20Source%20Link.txt">Data Source Link.txt</a>
 </br>
 ├── Presentation |
-   └── <a href="https://github.com/Omer-mohamed01/Cyclistic-Bike-Share-Analysis-Report/blob/02a83b36fed2673c520adccbdfe04aec2e5b6f76/Document/Divvy%20Trips%202019%20Presentation.pdf">Divvy Trips 2019.pdf</a>
+   └── <a href="https://github.com/Omer-mohamed01/Cyclistic-Bike-Share-Analysis-Report/blob/5289b2f4094235bb6b2cbaed7071cbc38c4f525f/Document/Divvy%20Trips%202019.pdf">Divvy Trips 2016.pdf</a>
 </br>
-└── Images |
-    </br>
-    └── <a href="https://github.com/Omer-mohamed01/Cyclistic-Bike-Share-Analysis-Report/blob/02a83b36fed2673c520adccbdfe04aec2e5b6f76/Charts/Sum%20of%20Trips%20Day%20of%20Week.png">Sum of Trips Day of Week.png</a>
-    </br>
-    └── <a href="https://github.com/Omer-mohamed01/Cyclistic-Bike-Share-Analysis-Report/blob/02a83b36fed2673c520adccbdfe04aec2e5b6f76/Charts/Sum%20of%20Trips%20Male%20vs%20Female.png">Sum of Trips Male vs Female.png</a>
-    </br>
-    └── <a href="https://github.com/Omer-mohamed01/Cyclistic-Bike-Share-Analysis-Report/blob/02a83b36fed2673c520adccbdfe04aec2e5b6f76/Charts/Sum%20of%20Trips%20Casual%20vs%20Annual.png">Sum of Trips Casual vs Annual.png</a>
+├── Images |
+   └── <a href="https://github.com/Omer-mohamed01/Cyclistic-Bike-Share-Analysis-Report/tree/5289b2f4094235bb6b2cbaed7071cbc38c4f525f/Charts">Charts</a>
 
 ---
 
