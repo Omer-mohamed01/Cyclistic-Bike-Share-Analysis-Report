@@ -1,5 +1,5 @@
 # 🚴‍♂️Divvy Trips 2019
-Analyze Cyclistic’s 2019 bike-share data to understand how annual members and casual riders use bikes differently — and provide recommendations to help convert casual riders into members.
+Analyze 3.8M records of Cyclistic’s 2019 bike-share data to understand how annual members and casual riders use bikes differently — and provide recommendations to help convert casual riders into members.
 
 ## Data Used
 <a href="https://divvy-tripdata.s3.amazonaws.com/index.html">Divvy Bike Share System Data (2019 Q1–Q4)</a>
